@@ -1,1 +1,4 @@
 https://chupetinsk.github.io/portafolio_dise_modas/
+FUNCIONES POR CORREGIR 
+- COMPATIBLIDAD DE TELEFONO
+- HIPERVINCULOS EN CONTACTO O CORREOA
