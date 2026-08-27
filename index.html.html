@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miluska | Diseño de Moda e Innovación en Lima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Textura de fondo -->
+<svg class="grain" aria-hidden="true">
+  <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/></filter>
+  <rect width="100%" height="100%" filter="url(#noise)"/>
+</svg>
+
+<!-- Navegación principal -->
+<header>
+  <div class="wrap nav-row">
+    <a href="#top" class="logo">Milu<em>sk</em>a</a>
+    <nav class="links">
+      <a href="#coleccion">Colección</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<!-- Navegación para pantallas pequeñas -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#coleccion">Colección</a>
+  <a href="#atelier">Atelier</a>
+  <a href="#proceso">Proceso</a>
+  <a href="#contacto">Contacto</a>
+</div>
+
+<!-- Contenido principal -->
+<main id="top">
+
+  <!-- Presentación -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Diseño de moda e innovación — Lima, Perú</p>
+        <h1 class="headline">Miluska<em>Diseño de modas</em></h1>
+        <p class="hero-sub">Cada pieza nace de una idea, se transforma con tecnología y se termina con cuidado. Este es el registro de cómo la innovación se convierte en moda.</p>
+      </div>
+      <div class="hero-right">
+        <p>Un portafolio pensado como laboratorio creativo: abre cualquier prenda de la colección y encontrarás su ficha completa — concepto, materiales, proceso y técnicas, tal como viven en mi estudio de Lima.</p>
+        <div class="hero-tags">
+          <span class="tag">Confección a medida</span>
+          <span class="tag">Patronaje propio</span>
+          <span class="tag">Telas naturales</span>
+          <span class="tag">Lima, Perú</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perfil de Miluska -->
+  <section id="atelier">
+    <div class="wrap about-grid">
+      <div>
+        <span class="section-num">01 — Perfil</span>
+        <h2 class="section-title section-title-spaced">El taller</h2>
+      </div>
+      <div>
+        <p>Soy <strong>Miluska</strong>, diseñadora de moda de 26 años, nacida en Lima, Perú. Desarrollo prendas que combinan identidad, funcionalidad e innovación: cada diseño pasa por investigación, boceto, patronaje, prototipo y ajustes antes de convertirse en una pieza final.</p>
+        <p>Me inspiran la diversidad cultural del Perú, sus texturas y la energía que transmite. Exploro nuevos materiales, procesos responsables y herramientas digitales para crear una moda contemporánea que dialogue con el cuerpo, la ciudad.</p>
+        <div class="facts">
+          <div class="fact"><span class="fact-label">Especialidad</span><span class="fact-value">Prêt-à-porter de autor y piezas a medida</span></div>
+          <div class="fact"><span class="fact-label">Edad</span><span class="fact-value">26 años</span></div>
+          <div class="fact"><span class="fact-label">Ubicación</span><span class="fact-value">Lima, Perú</span></div>
+          <div class="fact"><span class="fact-label">Enfoque</span><span class="fact-value">Moda, innovación y diseño responsable</span></div>
+          <div class="fact"><span class="fact-label">Proceso</span><span class="fact-value">Investigación → idea → prototipo → prenda</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Colección de prendas -->
+  <section id="coleccion">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-num">02 — Colección</span>
+          <h2 class="section-title section-title-spaced">El perchero</h2>
+        </div>
+        <p class="section-note">Toca cualquier prenda para abrir su ficha técnica completa: de la idea a la puntada final.</p>
+      </div>
+      <div class="rail-bar"></div>
+      <div class="garments" id="garmentGrid"></div>
+    </div>
+  </section>
+
+  <!-- Método de trabajo -->
+  <section class="process-strip" id="proceso">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-num section-num-gold">03 — Método</span>
+          <h2 class="section-title section-title-spaced">De la idea a la prenda</h2>
+        </div>
+        <p class="section-note">Un recorrido creativo que une técnica, experimentación y expresión personal.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="step-index">01</span><h3 class="step-title">Boceto</h3><p class="step-text">Croquis a mano y referencias de silueta, volumen y movimiento.</p></div>
+        <div class="step"><span class="step-index">02</span><h3 class="step-title">Patronaje</h3><p class="step-text">El patrón base se traza y se ajusta pieza por pieza.</p></div>
+        <div class="step"><span class="step-index">03</span><h3 class="step-title">Muselina</h3><p class="step-text">Prueba en tela cruda sobre maniquí para validar caída y proporción.</p></div>
+        <div class="step"><span class="step-index">04</span><h3 class="step-title">Confección</h3><p class="step-text">Corte en tela definitiva y montaje con costuras a mano y máquina.</p></div>
+        <div class="step"><span class="step-index">05</span><h3 class="step-title">Acabados</h3><p class="step-text">Dobladillo, botonadura, planchado final y control de calidad.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto y pie de página -->
+  <footer id="contacto">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <h2>Hablemos de tu próxima prenda</h2>
+          <p>Proyectos de diseño, prendas a medida, colaboraciones creativas y propuestas de innovación en moda desde Lima.</p>
+        </div>
+        <form onsubmit="event.preventDefault(); alert('Gracias — este formulario es una maqueta. Conéctalo a tu correo o servicio favorito.');">
+          <div class="field"><label for="fname">Nombre</label><input id="fname" type="text" required></div>
+          <div class="field"><label for="femail">Correo</label><input id="femail" type="email" required></div>
+          <div class="field"><label for="fmsg">Mensaje</label><textarea id="fmsg" required></textarea></div>
+          <button class="send-btn" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+      <div class="foot-bottom">
+        <span class="logo">Milu<em>sk</em>a</span>
+        <div class="foot-links">
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+          <a href="mailto:miluska@gmail.com">miluska@gmail.com</a>
+        </div>
+        <span class="foot-links foot-location">Lima, Perú — ©2026 Miluska</span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<!-- Modal: ficha técnica de cada proyecto -->
+<div class="fiche-overlay" id="ficheOverlay" role="dialog" aria-modal="true" aria-label="Ficha técnica de la prenda">
+  <div class="fiche" id="ficheCard">
+    <div class="ruler" id="ruler"></div>
+    <button class="fiche-close" id="ficheClose" aria-label="Cerrar ficha">✕</button>
+    <div class="fiche-body" id="ficheBody"></div>
+  </div>
+</div>
+
+<!-- Datos, ilustraciones y comportamiento interactivo -->
+<script>
+/* ===== Ilustraciones técnicas de las prendas ===== */
+const INK = "#211E1B";
+const flats = {
+  slip: `<svg viewBox="0 0 220 340" fill="none" stroke="${INK}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="80" y1="38" x2="60" y2="10"/><line x1="140" y1="38" x2="160" y2="10"/>
+    <path d="M80 38 C 90 55, 130 55, 140 38 C 150 60, 150 100, 140 120 L 150 300 C 150 312, 70 312, 70 300 L 80 120 C 70 100, 70 60, 80 38 Z"/>
+    <path d="M92 130 L 92 290" stroke-dasharray="3 5" stroke-width="1"/>
+    <path d="M110 60 C 110 90, 110 110, 110 130" stroke-width="1" stroke-dasharray="2 6"/>
+  </svg>`,
+  coat: `<svg viewBox="0 0 220 340" fill="none" stroke="${INK}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 40 L 95 30 L 110 55 L 125 30 L 160 40"/>
+    <path d="M60 40 C 40 60, 40 110, 48 150 L 40 300 L 78 300 L 82 130"/>
+    <path d="M160 40 C 180 60, 180 110, 172 150 L 180 300 L 142 300 L 138 130"/>
+    <path d="M82 130 C 90 60, 130 60, 138 130 L 145 300 L 75 300 Z"/>
+    <circle cx="105" cy="120" r="2" fill="${INK}"/><circle cx="105" cy="160" r="2" fill="${INK}"/>
+    <circle cx="105" cy="200" r="2" fill="${INK}"/><circle cx="105" cy="240" r="2" fill="${INK}"/>
+    <circle cx="118" cy="120" r="2" fill="${INK}"/><circle cx="118" cy="160" r="2" fill="${INK}"/>
+    <circle cx="118" cy="200" r="2" fill="${INK}"/><circle cx="118" cy="240" r="2" fill="${INK}"/>
+  </svg>`,
+  jumpsuit: `<svg viewBox="0 0 220 340" fill="none" stroke="${INK}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="90" y1="35" x2="75" y2="15"/><line x1="130" y1="35" x2="145" y2="15"/>
+    <path d="M90 35 C 100 48, 120 48, 130 35 C 138 55, 138 90, 130 105 L 134 150"/>
+    <path d="M90 35 C 82 55, 82 90, 90 105 L 86 150"/>
+    <line x1="70" y1="150" x2="150" y2="150" stroke-dasharray="3 5" stroke-width="1"/>
+    <path d="M86 155 C 70 190, 62 250, 58 300 L 92 300 L 100 160"/>
+    <path d="M134 155 C 150 190, 158 250, 162 300 L 128 300 L 120 160"/>
+  </svg>`,
+  aline: `<svg viewBox="0 0 220 340" fill="none" stroke="${INK}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M55 45 L 95 30 L 110 42 L 125 30 L 165 45"/>
+    <path d="M55 45 C 65 60, 75 70, 82 95 L 88 135"/>
+    <path d="M165 45 C 155 60, 145 70, 138 95 L 132 135"/>
+    <path d="M88 135 L 55 300 L 165 300 L 132 135 Z"/>
+    <line x1="88" y1="135" x2="80" y2="110" stroke-width="1"/>
+    <line x1="132" y1="135" x2="140" y2="110" stroke-width="1"/>
+    <path d="M110 135 L 110 300" stroke-dasharray="3 5" stroke-width="1"/>
+  </svg>`,
+  blazer: `<svg viewBox="0 0 220 340" fill="none" stroke="${INK}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M65 40 L 95 55 L 110 40 L 125 55 L 155 40"/>
+    <path d="M65 40 C 50 60, 48 100, 52 140 L 46 300 L 80 300 L 88 150"/>
+    <path d="M155 40 C 170 60, 172 100, 168 140 L 174 300 L 140 300 L 132 150"/>
+    <path d="M95 55 L 88 150 L 82 260 L 138 260 L 132 150 L 125 55"/>
+    <circle cx="110" cy="175" r="2.2" fill="${INK}"/>
+    <rect x="86" y="200" width="16" height="8"/><rect x="118" y="200" width="16" height="8"/>
+  </svg>`,
+  wrap: `<svg viewBox="0 0 220 340" fill="none" stroke="${INK}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="85" y1="35" x2="70" y2="15"/><line x1="135" y1="35" x2="150" y2="15"/>
+    <path d="M85 35 L 130 120 L 118 130 L 90 60 Z"/>
+    <path d="M135 35 L 90 120 L 102 130 L 130 60 Z"/>
+    <path d="M92 128 C 80 100, 82 60, 90 40"/>
+    <path d="M128 128 C 140 100, 138 60, 130 40"/>
+    <path d="M96 132 C 78 170, 65 240, 60 300 L 160 300 C 155 240, 142 170, 124 132 Z"/>
+    <line x1="112" y1="132" x2="90" y2="200" stroke-width="1"/>
+    <line x1="130" y1="150" x2="150" y2="220" stroke-width="1"/>
+  </svg>`
+};
+
+/* ===== Proyectos: contenido editable de la colección ===== */
+const projects = [
+  {
+    id:"camelia", ref:"MK—01 / SS26", name:"Vestido Camélia", cat:"Vestido lencero", season:"Primavera–Verano 2026",
+    fabric:"Seda de doble faz", flat:"slip",
+    story:"Pensado para una tarde cálida en Lima: un lencero al bies que cae sin forzar el cuerpo. Nació de la búsqueda de una silueta ligera, versátil y consciente del movimiento.",
+    colors:[["#B8AEA0","Crudo natural"],["#9C3F2A","Ladrillo"],["#3E3730","Tierra oscura"]],
+    timeline:[
+      ["Boceto","Tres variantes de escote y largo de tirante dibujadas en una tarde, hasta quedarnos con el escote en V asimétrico."],
+      ["Patronaje","Patrón al bies en cuatro paños para que la tela trabaje con la gravedad, no contra ella."],
+      ["Muselina","Primera prueba sobre maniquí: el bajo caía irregular. Se recortó 2 cm en el paño lateral izquierdo."],
+      ["Confección","Costuras francesas en toda la pieza para que no marquen a través de la seda."],
+      ["Acabados","Dobladillo enrollado a mano, 40 minutos por metro de bajo."]
+    ],
+    techniques:["Corte al bies","Costura francesa","Dobladillo a mano"],
+    facts:[["Tiempo total","Aprox. 14 horas"],["Talla base","36 (ajustable)"],["Origen tela","Algodón peruano"]]
+  },
+  {
+    id:"rive", ref:"MK—02 / AW25", name:"Abrigo Rive Gauche", cat:"Abrigo estructurado", season:"Otoño–Invierno 2025",
+    fabric:"Lana peinada doble", flat:"coat",
+    story:"Un abrigo pensado para las mañanas frescas de Lima. La solapa ancha y la botonadura doble reinterpretan la sastrería clásica con una construcción más ligera y actual.",
+    colors:[["#3E3730","Antracita"],["#7c3120","Burdeos"],["#AE8A3E","Botón latón"]],
+    timeline:[
+      ["Boceto","Estudio de proporción de solapa: probamos cinco anchos antes de fijar 9 cm."],
+      ["Patronaje","Patrón con pinzas ocultas en el costado para mantener la espalda limpia, sin costura central."],
+      ["Muselina","La manga quedaba corta en movimiento; se añadieron 1.5 cm de holgura en la sisa."],
+      ["Confección","Entretela termoadhesiva en solapas y cuello para que mantengan la forma con el uso."],
+      ["Acabados","Botones de latón cosidos con hilo encerado, ojales a mano."]
+    ],
+    techniques:["Solapa de sastrería","Entretelado","Ojal a mano"],
+    facts:[["Tiempo total","Aprox. 22 horas"],["Talla base","38 (ajustable)"],["Origen tela","Lana de alpaca peruana"]]
+  },
+  {
+    id:"bastide", ref:"MK—03 / SS26", name:"Mono Bastide", cat:"Mono de pierna ancha", season:"Primavera–Verano 2026",
+    fabric:"Lino lavado", flat:"jumpsuit",
+    story:"Diseñado para moverse por la ciudad: reuniones, universidad y recorridos por Lima. El lino lavado se arruga a propósito — es parte del carácter de la pieza, no un defecto que corregir.",
+    colors:[["#E3D5BC","Arena"],["#574760","Ciruela"],["#211E1B","Tinta"]],
+    timeline:[
+      ["Boceto","Silueta pensada desde el cinturón hacia afuera: primero se dibujó la caída de la pierna."],
+      ["Patronaje","Pretina interior oculta para que el cinturón exterior no cargue el peso de la prenda."],
+      ["Muselina","Ajuste de la sisa halter — la primera versión tiraba al levantar los brazos."],
+      ["Confección","Costuras planas en el interior para que no roce con el lino sin forrar."],
+      ["Acabados","Lavado en frío tras la confección para fijar la arruga natural de la tela."]
+    ],
+    techniques:["Pretina interior","Costura plana","Lavado post-confección"],
+    facts:[["Tiempo total","Aprox. 16 horas"],["Talla base","38 (ajustable)"],["Origen tela","Lino de producción responsable"]]
+  },
+  {
+    id:"ala", ref:"MK—04 / AW25", name:"Vestido Ala", cat:"Vestido evasé", season:"Otoño–Invierno 2025",
+    fabric:"Paño de lana fina", flat:"aline",
+    story:"El hombro estructurado fue lo primero que se dibujó — todo lo demás se construyó para sostenerlo. Un vestido con presencia, pensado para expresar seguridad y movimiento.",
+    colors:[["#211E1B","Tinta"],["#9C3F2A","Ladrillo"],["#B8AEA0","Crudo"]],
+    timeline:[
+      ["Boceto","La hombrera se dibujó primero; el resto del patrón se construyó a partir de su ángulo."],
+      ["Patronaje","Pinzas dobles en delantero y espalda para controlar el vuelo desde la cintura."],
+      ["Muselina","Se probó con y sin hombrera interna; ganó la versión con relleno ligero de fieltro."],
+      ["Confección","Forro completo en paño de seda para que el vuelo caiga limpio."],
+      ["Acabados","Cierre invisible lateral, hombrera cosida a mano por dentro."]
+    ],
+    techniques:["Hombrera interna","Pinza doble","Forro completo"],
+    facts:[["Tiempo total","Aprox. 19 horas"],["Talla base","36 (ajustable)"],["Origen tela","Lana peruana"]]
+  },
+  {
+    id:"nacar", ref:"MK—05 / SS26", name:"Vestido Blazer Nácar", cat:"Vestido sastre", season:"Primavera–Verano 2026",
+    fabric:"Cotelé fino de algodón", flat:"blazer",
+    story:"Nace de la pregunta: ¿puede una chaqueta de sastre ser también un vestido de una sola pieza? La propuesta mezcla códigos urbanos, funcionalidad e innovación en una sola silueta.",
+    colors:[["#F5EFE2","Nácar"],["#211E1B","Tinta"],["#AE8A3E","Botón latón"]],
+    timeline:[
+      ["Boceto","Se dibujó primero el largo de rodilla, luego se subió la solapa desde ahí."],
+      ["Patronaje","Patrón de sastrería adaptado a vestido: pinza de sisa reubicada en el costado."],
+      ["Muselina","El bolsillo de parche quedaba muy alto; se bajó 3 cm en la prueba final."],
+      ["Confección","Un solo botón funcional, entretela ligera solo en solapa."],
+      ["Acabados","Pespunte visible a 0.5 cm en todos los bordes de sastrería."]
+    ],
+    techniques:["Sastrería adaptada","Bolsillo de parche","Pespunte visible"],
+    facts:[["Tiempo total","Aprox. 17 horas"],["Talla base","38 (ajustable)"],["Origen tela","Algodón peruano"]]
+  },
+  {
+    id:"lima", ref:"MK—06 / AW25", name:"Vestido Envolvente Lima", cat:"Vestido cruzado", season:"Otoño–Invierno 2025",
+    fabric:"Viscosa con caída fluida", flat:"wrap",
+    story:"Inspirado en el ritmo de Lima, este vestido se cierra sobre el cuerpo como una cinta, sin cremalleras ni botones — solo un nudo y una atadura.",
+    colors:[["#7c3120","Burdeos"],["#3E3730","Tierra oscura"],["#B8AEA0","Crudo"]],
+    timeline:[
+      ["Boceto","Estudio del cruce del escote en tres ángulos hasta encontrar el que no se abre al caminar."],
+      ["Patronaje","Delantero en una sola pieza cortada al bies para que el cruce no necesite cierre."],
+      ["Muselina","Prueba de movimiento: caminar, sentarse, subir escaleras — el escote se mantuvo cerrado."],
+      ["Confección","Cinta interior de sujeción cosida en el lado derecho, invisible desde fuera."],
+      ["Acabados","Atadura exterior rematada a mano con puntada invisible."]
+    ],
+    techniques:["Cruce al bies","Cinta interior de sujeción","Puntada invisible"],
+    facts:[["Tiempo total","Aprox. 15 horas"],["Talla base","36–38 (ajustable)"],["Origen tela","Viscosa de bajo impacto"]]
+  }
+];
+
+/* ===== Renderizado de la colección ===== */
+const grid = document.getElementById('garmentGrid');
+grid.innerHTML = projects.map(p => `
+  <button class="garment" data-id="${p.id}" aria-haspopup="dialog">
+    <div class="hook-circle"></div><div class="hook"></div>
+    <div class="garment-figure">${flats[p.flat]}</div>
+    <div class="garment-info">
+      <div>
+        <div class="garment-name">${p.name}</div>
+        <div class="garment-meta">${p.cat}</div>
+      </div>
+      <div class="garment-ref">${p.ref}</div>
+    </div>
+    <div class="garment-open">Ver ficha completa</div>
+  </button>
+`).join('');
+
+/* ===== Regla decorativa del modal ===== */
+const ruler = document.getElementById('ruler');
+let rulerHtml = '';
+for(let i=0;i<70;i++){
+  rulerHtml += `<div class="ruler-tick${i%5===0?' major':''}" ${i%5===0?`data-n="${i}"`:''}></div>`;
+}
+ruler.innerHTML = rulerHtml;
+
+/* ===== Lógica de la ficha técnica ===== */
+const overlay = document.getElementById('ficheOverlay');
+const ficheBody = document.getElementById('ficheBody');
+let lastFocused = null;
+
+function openFiche(id){
+  const p = projects.find(x => x.id === id);
+  if(!p) return;
+  ficheBody.innerHTML = `
+    <div class="fiche-top">
+      <div class="fiche-figure">${flats[p.flat]}</div>
+      <div class="fiche-details">
+        <span class="fiche-ref">${p.ref} — ${p.season}</span>
+        <h3 class="fiche-title">${p.name}</h3>
+        <div class="fiche-meta-row">
+          <span class="tag">${p.cat}</span>
+          <span class="tag">${p.fabric}</span>
+        </div>
+        <p class="fiche-story">${p.story}</p>
+        <div class="swatches">
+          ${p.colors.map(c => `<div class="swatch" data-color="${c[0]}" title="${c[1]}"></div>`).join('')}
+          <span class="swatch-label">${p.colors.map(c=>c[1]).join(' · ')}</span>
+        </div>
+      </div>
+    </div>
+    <div class="fiche-sections">
+      <div>
+        <span class="side-label">Del boceto a la prenda</span>
+        <ol class="timeline">
+          ${p.timeline.map((t,i) => `
+            <li>
+              <span class="t-index">${String(i+1).padStart(2,'0')}</span>
+              <div><div class="t-title">${t[0]}</div><div class="t-text">${t[1]}</div></div>
+            </li>`).join('')}
+        </ol>
+      </div>
+      <div>
+        <div class="side-block">
+          <span class="side-label">Técnicas</span>
+          <div class="chips">${p.techniques.map(t => `<span class="chip">${t}</span>`).join('')}</div>
+        </div>
+        <div class="side-block">
+          <span class="side-label">Ficha</span>
+          ${p.facts.map(f => `<div class="side-fact"><strong>${f[0]}:</strong> ${f[1]}</div>`).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+  ficheBody.querySelectorAll('.swatch').forEach((swatch, index) => {
+    swatch.style.backgroundColor = p.colors[index][0];
+  });
+  lastFocused = document.activeElement;
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('ficheClose').focus();
+}
+
+function closeFiche(){
+  overlay.classList.remove('open');
+  document.body.style.overflow = '';
+  if(lastFocused) lastFocused.focus();
+}
+
+grid.addEventListener('click', e => {
+  const btn = e.target.closest('.garment');
+  if(btn) openFiche(btn.dataset.id);
+});
+document.getElementById('ficheClose').addEventListener('click', closeFiche);
+overlay.addEventListener('click', e => { if(e.target === overlay) closeFiche(); });
+document.addEventListener('keydown', e => { if(e.key === 'Escape' && overlay.classList.contains('open')) closeFiche(); });
+
+/* ---------------- mobile menu ---------------- */
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+menuBtn.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', open);
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
+  menuBtn.setAttribute('aria-expanded','false');
+}));
+</script>
+
+</body>
+</html>
