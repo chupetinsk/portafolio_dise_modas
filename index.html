@@ -122,7 +122,7 @@
   <footer id="contacto">
     <div class="wrap">
       <div class="contact-grid">
-        <div>
+        <div class="contact-intro">
           <h2>Hablemos de tu próxima prenda</h2>
           <p>Proyectos de diseño, prendas a medida, colaboraciones creativas y propuestas de innovación en moda desde Lima.</p>
         </div>
@@ -311,7 +311,6 @@ const projects = [
 const grid = document.getElementById('garmentGrid');
 grid.innerHTML = projects.map(p => `
   <button class="garment" data-id="${p.id}" aria-haspopup="dialog">
-    <div class="hook-circle"></div><div class="hook"></div>
     <div class="garment-figure">${flats[p.flat]}</div>
     <div class="garment-info">
       <div>
