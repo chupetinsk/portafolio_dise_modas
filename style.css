@@ -81,7 +81,7 @@ nav.links a:hover::after, nav.links a:focus-visible::after{ width:100%; }
 .eyebrow{ font-family:var(--mono); font-size:0.74rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--brick); display:flex; align-items:center; gap:10px; margin-bottom:22px; }
 .eyebrow::before{ content:''; width:26px; height:1px; background:var(--brick); }
 h1.headline{ font-family:var(--display); font-weight:300; font-size:clamp(3rem, 7vw, 6.4rem); line-height:0.94; letter-spacing:-0.01em; }
-h1.headline em{ font-style:italic; font-weight:450; color:var(--brick); display:block; }
+h1.headline em{ font-style:italic; font-weight:300; color:var(--brick); display:block; }
 .hero-sub{ font-size:1.05rem; color:var(--ink-soft); max-width:36ch; margin-top:26px; font-weight:300; }
 .hero-right{ position:relative; padding-left:24px; border-left:1px solid var(--line); }
 .hero-right p{ font-size:0.98rem; color:var(--ink-soft); font-weight:300; }
