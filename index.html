@@ -47,7 +47,7 @@
     <div class="wrap hero-grid">
       <div>
         <p class="eyebrow">Diseño de moda e innovación — Lima, Perú</p>
-        <h1 class="headline">Miluska Vasquez Saenz<em>Diseño de modas</em></h1>
+        <h1 class="headline"><span>Miluska</span><em>Diseño de moda</em></h1>
         <p class="hero-sub">Cada pieza nace de una idea, se transforma con tecnología y se termina con cuidado. Este es el registro de cómo la innovación se convierte en moda.</p>
       </div>
       <div class="hero-right">
@@ -64,10 +64,10 @@
 
   <!-- Perfil de Miluska -->
   <section id="atelier">
-    <div class="wrap about-grid">
+    <div class="wrap about-grid reveal">
       <div>
         <span class="section-num">01 — Perfil</span>
-        <h2 class="section-title section-title-spaced">El taller</h2>
+        <h2 class="section-title section-title-spaced">Atelier</h2>
       </div>
       <div>
         <p>Soy <strong>Miluska</strong>, diseñadora de moda de 26 años, nacida en Lima, Perú. Desarrollo prendas que combinan identidad, funcionalidad e innovación: cada diseño pasa por investigación, boceto, patronaje, prototipo y ajustes antes de convertirse en una pieza final.</p>
@@ -86,10 +86,10 @@
   <!-- Colección de prendas -->
   <section id="coleccion">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <div>
           <span class="section-num">02 — Colección</span>
-          <h2 class="section-title section-title-spaced">El perchero</h2>
+          <h2 class="section-title section-title-spaced">Colección</h2>
         </div>
         <p class="section-note">Toca cualquier prenda para abrir su ficha técnica completa: de la idea a la puntada final.</p>
       </div>
@@ -101,10 +101,10 @@
   <!-- Método de trabajo -->
   <section class="process-strip" id="proceso">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <div>
           <span class="section-num section-num-gold">03 — Método</span>
-          <h2 class="section-title section-title-spaced">De la idea a la prenda</h2>
+          <h2 class="section-title section-title-spaced">Proceso</h2>
         </div>
         <p class="section-note">Un recorrido creativo que une técnica, experimentación y expresión personal.</p>
       </div>
@@ -121,9 +121,9 @@
   <!-- Contacto y pie de página -->
   <footer id="contacto">
     <div class="wrap">
-      <div class="contact-grid">
+      <div class="contact-grid reveal">
         <div class="contact-intro">
-          <h2>Hablemos de tu próxima prenda</h2>
+          <h2>Contacto</h2>
           <p>Proyectos de diseño, prendas a medida, colaboraciones creativas y propuestas de innovación en moda desde Lima.</p>
         </div>
         <form onsubmit="event.preventDefault(); alert('Gracias — este formulario es una maqueta. Conéctalo a tu correo o servicio favorito.');">
@@ -140,7 +140,7 @@
           <a href="#">Pinterest</a>
           <a href="mailto:miluska@gmail.com">miluska@gmail.com</a>
         </div>
-        <span class="foot-links foot-location">Lima, Perú — Git ©2026 Alejandro Rivera</span>
+        <span class="foot-links foot-location">Lima, Perú — ©2026 Miluska</span>
       </div>
     </div>
   </footer>
@@ -413,6 +413,21 @@ mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => 
   mobileMenu.classList.remove('open');
   menuBtn.setAttribute('aria-expanded','false');
 }));
+
+/* ---------------- animaciones al hacer scroll ---------------- */
+const revealItems = document.querySelectorAll('.reveal, .garment, .step');
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(!entry.isIntersecting) return;
+    entry.target.classList.add('is-visible');
+    revealObserver.unobserve(entry.target);
+  });
+}, { threshold:0.15 });
+
+revealItems.forEach(item => {
+  item.classList.add('reveal');
+  revealObserver.observe(item);
+});
 </script>
 
 </body>
